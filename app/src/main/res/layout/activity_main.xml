@@ -9,36 +9,42 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="1">
 
         <TextView
             android:id="@+id/txtNumber1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Number1" />
+            android:gravity="center_horizontal"
+            android:text="Number1ArrayList" />
 
         <TextView
             android:id="@+id/txtNumber2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Number2" />
+            android:gravity="center_horizontal"
+            android:text="Number2ArrayList" />
 
         <TextView
             android:id="@+id/txtNumber3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Number3" />
+            android:gravity="center_horizontal"
+            android:text="Number3ArrayList" />
 
         <TextView
             android:id="@+id/txtNumber4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Number4" />
+            android:gravity="center_horizontal"
+            android:text="Number4ArrayList" />
 
         <TextView
             android:id="@+id/txtLength"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:text='The ArrayList Size "Length"' />
 
         <Button
@@ -46,5 +52,55 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="append" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="100dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/txtNumber1A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Number1Array" />
+
+        <TextView
+            android:id="@+id/txtNumber2A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Number2Array" />
+
+        <TextView
+            android:id="@+id/txtNumber3A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Number3Array" />
+
+        <TextView
+            android:id="@+id/txtNumber4A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Number4Array" />
+
+        <TextView
+            android:id="@+id/txtLengthArray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text='The Array Size "Length"' />
+
+        <Button
+            android:id="@+id/btnAppendA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AppendA" />
+
     </LinearLayout>
+
 </RelativeLayout>

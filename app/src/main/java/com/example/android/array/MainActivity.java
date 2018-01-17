@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        // ArrayList variables
         final TextView txtNumber1 = (TextView) findViewById(R.id.txtNumber1);
         final TextView txtNumber2 = (TextView) findViewById(R.id.txtNumber2);
         final TextView txtNumber3 = (TextView) findViewById(R.id.txtNumber3);
@@ -26,7 +26,9 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnAppend = (Button) findViewById(R.id.btnAppend);
 
-        final ArrayList <String> numbers = new ArrayList<String>();
+        // Making an ArrayList
+
+        final ArrayList<String> numbers = new ArrayList<String>();
 
         numbers.add(0, "One");
         numbers.add(1, "Tow");
@@ -43,8 +45,40 @@ public class MainActivity extends AppCompatActivity {
                 txtLength.setText(numbers.size() + "");
 
 
+                // Array variables
 
-                String word [] = new String[5];
+                final TextView txtnumber1A = (TextView) findViewById(R.id.txtNumber1A);
+                final TextView txtnumber2A = (TextView) findViewById(R.id.txtNumber1A);
+                final TextView txtnumber3A = (TextView) findViewById(R.id.txtNumber1A);
+                final TextView txtnumber4A = (TextView) findViewById(R.id.txtNumber1A);
+                final TextView txtLengthArray = (TextView) findViewById(R.id.txtLengthArray);
+
+                final Button btnAppendA = (Button) findViewById(R.id.btnAppendA);
+
+
+                // Making an Array
+
+                final String word[] = new String[4];
+
+                word[0] = "One From Array";
+                word[1] = "Two From Array";
+                word[2] = "Three From Array";
+                word[3] = "Four From Array";
+
+                btnAppendA.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+                        txtnumber1A.setText(word[0]);
+                        txtnumber2A.setText(word[1]);
+                        txtnumber3A.setText(word[2]);
+                        txtnumber4A.setText(word[3]);
+                        txtLengthArray.setText(word.length + "");
+
+
+                    }
+                });
+
             }
         });
     }
