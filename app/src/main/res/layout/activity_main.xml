@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.array.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtNumber1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Number1" />
+
+        <TextView
+            android:id="@+id/txtNumber2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Number2" />
+
+        <TextView
+            android:id="@+id/txtNumber3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Number3" />
+
+        <TextView
+            android:id="@+id/txtNumber4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Number4" />
+
+        <TextView
+            android:id="@+id/txtLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text='The ArrayList Size "Length"' />
+
+        <Button
+            android:id="@+id/btnAppend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="append" />
+    </LinearLayout>
+</RelativeLayout>
